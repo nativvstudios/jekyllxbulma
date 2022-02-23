@@ -1,0 +1,333 @@
+<section class="container">
+    <div class="columns is-centered features">
+      {% for post in site.posts limit:1 %}
+
+      <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="{{ post.image }}" alt="butterfly image" class="modal-button" data-target="modal-image1">
+              </figure>
+            </div>
+            <div class="card-content  modal-button" data-target="modal-card1">
+              <div class="content">
+                <h4>{{ post.title }}</h4>
+                <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
+                <form action="{{ post.url }}">
+                  <input class="button is-link modal-button" type="submit" value="Go to Post" />
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+
+      {% for post in site.posts offset:1 limit:1 %}
+
+      <div class="column is-3">
+
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{ post.image }}" alt="butterfly image" class="modal-button" data-target="modal-image2">
+            </figure>
+          </div>
+          <div class="card-content  modal-button" data-target="modal-card2">
+            <div class="content">
+              <h4>{{ post.title }}</h4>
+              <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
+              <form action="{{ post.url }}">
+                  <input class="button is-link modal-button" type="submit" value="Go to Post" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      {% for post in site.posts offset:2 limit:1 %}
+
+      <div class="column is-3">
+
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{ post.image }}" alt="butterfly image" class="modal-button" data-target="modal-image3">
+            </figure>
+          </div>
+          <div class="card-content  modal-button" data-target="modal-card3">
+            <div class="content">
+              <h4>{{ post.title }}</h4>
+              <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
+              <form action="{{ post.url }}">
+                  <input class="button is-link modal-button" type="submit" value="Go to Post" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      {% for post in site.posts offset:3 limit:1 %}
+
+      <div class="column is-3">
+
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{ post.image }}" alt="butterfly image" class="modal-button" data-target="modal-image4">
+            </figure>
+          </div>
+          <div class="card-content  modal-button" data-target="modal-card4">
+            <div class="content">
+              <h4>{{ post.title }}</h4>
+              <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
+              <form action="{{ post.url }}">
+                  <input class="button is-link modal-button" type="submit" value="Go to Post" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!--  ===============
+  HERE BE MODALS
+  ===============  -->
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+  {% for post in site.posts limit:1 %}
+  <div id="modal-card1" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="{{ post.image }}" alt="butterfly">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="https://thispersondoesnotexist.com/image" alt="linda barret avatar">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">{{ post.title }}</p>
+              <p class="subtitle is-6">@jane_doe</p>
+            </div>
+          </div>
+          <div class="content">
+              {{ post.content }}
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br>
+            <time datetime="2018-02-02">12:45 AM - 20 May 2018</time>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+          <!-- Image modal -->
+          <div id="modal-image1" class="modal modal-fx-3dSlit">
+              <div class="modal-background"></div>
+              <div class="modal-content is-huge is-image">
+                <!-- content -->
+                <img src="{{ post.image }}" alt="butterfly">
+                <!-- end content -->
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+  {% endfor %}
+  <!-- end tiny modal card -->
+
+
+  
+
+  <!--  ===============
+  HERE BE MODALS
+  ===============  -->
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+  {% for post in site.posts offset:1 limit:1 %}
+  <div id="modal-card2" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="{{ post.image }}" alt="butterfly">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="https://thispersondoesnotexist.com/image" alt="linda barret avatar">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">{{ post.title }}</p>
+              <p class="subtitle is-6">@jane_doe</p>
+            </div>
+          </div>
+          <div class="content">
+              {{ post.content }}
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br>
+            <time datetime="2018-02-02">12:45 AM - 20 May 2018</time>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+          <!-- Image modal -->
+          <div id="modal-image2" class="modal modal-fx-3dSlit">
+              <div class="modal-background"></div>
+              <div class="modal-content is-huge is-image">
+                <!-- content -->
+                <img src="{{ post.image }}" alt="butterfly">
+                <!-- end content -->
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+  {% endfor %}
+  <!-- end tiny modal card -->
+
+
+
+
+
+  <!--  ===============
+  HERE BE MODALS
+  ===============  -->
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+  {% for post in site.posts offset:2 limit:1 %}
+  <div id="modal-card3" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="{{ post.image }}" alt="butterfly">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="https://thispersondoesnotexist.com/image" alt="linda barret avatar">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">{{ post.title }}</p>
+              <p class="subtitle is-6">@jane_doe</p>
+            </div>
+          </div>
+          <div class="content">
+              {{ post.content }}
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br>
+            <time datetime="2018-02-02">12:45 AM - 20 May 2018</time>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+          <!-- Image modal -->
+          <div id="modal-image3" class="modal modal-fx-3dSlit">
+              <div class="modal-background"></div>
+              <div class="modal-content is-huge is-image">
+                <!-- content -->
+                <img src="{{ post.image }}" alt="butterfly">
+                <!-- end content -->
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+  {% endfor %}
+  <!-- end tiny modal card -->
+
+  <!--  ===============
+  HERE BE MODALS
+  ===============  -->
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+  {% for post in site.posts offset:3 limit:1 %}
+  <div id="modal-card4" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="{{ post.image }}" alt="butterfly">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="https://thispersondoesnotexist.com/image" alt="linda barret avatar">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">{{ post.title }}</p>
+              <p class="subtitle is-6">@jane_doe</p>
+            </div>
+          </div>
+          <div class="content">
+              {{ post.content }}
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br>
+            <time datetime="2018-02-02">12:45 AM - 20 May 2018</time>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+      <!-- Image modal -->
+      <div id="modal-image4" class="modal modal-fx-3dSlit">
+          <div class="modal-background"></div>
+          <div class="modal-content is-huge is-image">
+            <!-- content -->
+            <img src="{{ post.image }}" alt="butterfly">
+            <!-- end content -->
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+  {% endfor %}
+  <!-- end tiny modal card -->
+

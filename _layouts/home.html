@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+  <body>
+    <section class="hero is-dark is-fullheight ">
+
+        <div class="hero-head">
+            {% include header.html %}
+    
+        </div>
+    
+    
+        <div class="hero-body ">
+            <div class="container has-text-centered is-centered">
+                <figure class="avatar image">
+                    <a href="#">
+                        <img class="is-rounded" src="https://picsum.photos/300" alt="">
+                    </a>
+                </figure>
+                <h1 class="title is-1">
+                  {{ site.title }}
+                </h1>
+                <p class="subtitle">
+                  {{ site.description }}
+                </p>
+              </div>
+        </div>
+    </section>
+    <div class="box cta">
+      <p class="has-text-centered">
+        <span class="tag is-primary">New</span> Here we have modal cards. When you click on them they will open functional modal examples.
+      </p>
+    </div>
+
+    {% include posts.html %}
+
+
+    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    <script src="../assets/js/wild.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll("body"), { });
+        });
+        </script>  
+          {% include footer.html %}
+  </body>
+</html>
