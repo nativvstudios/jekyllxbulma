@@ -264,7 +264,10 @@ body {
 }
 
 .post-content {
-  margin: 0 10rem 0 10rem;
+  line-height: 180%;
+  width: 75%;
+  max-width: 100%;
+  margin: 0 auto;
   color: var(--white-2);
 }
 
