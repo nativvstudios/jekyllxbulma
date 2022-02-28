@@ -3,7 +3,7 @@
 
 
 $navbar-font-color: white;
-$background-dark-gray: #23272a;
+$background-dark-gray: #23262a;
 $tiles-background: #2c3037;
 
 .hero-img {
@@ -13,6 +13,12 @@ $tiles-background: #2c3037;
 
 body {
     background-color: $background-dark-gray;
+
+    p {
+        strong {
+            color: white;
+        }
+    }
 
 }
 
@@ -64,21 +70,10 @@ body {
     }
 }
 
+
 .tile {
     border-radius: 1rem;
     transition: all 0.2s ease-in-out;
-
-    .is-parent {
-
-    }
-    &.is-danger {
-        background-color: black;
-    }
-
-    .post-img {
-        border-radius: 1rem;
-        
-    }
 
     a {
         box-shadow: 0 2px 18px 0 black;
@@ -89,6 +84,18 @@ body {
 
         }
     }
+
+    .is-parent {
+
+    }
+    &.is-danger {
+        background-color: black;
+    }
+
+    .post-img {
+        border-radius: 1rem;
+    }
+
 }
 
 
