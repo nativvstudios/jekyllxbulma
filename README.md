@@ -2,6 +2,7 @@
 ## W.I.P
 
 >A Minimal Dark theme for jekyll built with [Bulma](bulma.io)
+
 [Live Demo Coming Soon]()
 
 ## How to install
