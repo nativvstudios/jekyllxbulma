@@ -1,9 +1,13 @@
 # Jekyll x Bulma
 ## W.I.P
 
->A Minimal Dark theme for jekyll built with [Bulma](bulma.io)
+>A Minimal Dark theme for jekyll built with [Bulma](bulma.io) 
 
+<<<<<<< HEAD
 [Live Demo Coming Soon]()
+=======
+[Live Demo](https://nativvstudios.com/jekyllxbulma)
+>>>>>>> 505633957f3db5b0c150f3e13b899dc8ee35b3d1
 
 ## How to install
 
@@ -18,7 +22,7 @@
 5. Access via
    * localhost or according to your pc configurations.
 6. Change the `_config.yml` file according to you.
-7. Upload the files on your repository and :sunglasses: enjoy.
+7. Upload the files on your repository and :sunglasses: enjoy!
 
 
 # Screenshots
