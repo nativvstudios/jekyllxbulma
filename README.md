@@ -3,11 +3,7 @@
 
 >A Minimal Dark theme for jekyll built with [Bulma](bulma.io) 
 
-<<<<<<< HEAD
-[Live Demo Coming Soon]()
-=======
 [Live Demo](https://nativvstudios.com/jekyllxbulma)
->>>>>>> 505633957f3db5b0c150f3e13b899dc8ee35b3d1
 
 ## How to install
 
