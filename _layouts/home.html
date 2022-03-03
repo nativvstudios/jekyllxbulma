@@ -23,6 +23,26 @@
                 <p class="subtitle">
                   {{ site.description }}
                 </p>
+
+                <div class="socials">
+                  {% for i in site.contacts %}
+                  <a href="{{i.url}}" target="_blank">
+                    <i class="fa-brands fa-{{i.title}} fa-lg"></i>
+            
+                  </a>
+            
+                  {%endfor%}
+
+                  {% assign email = site.contacts | where:"title", "email"%}
+                  {% for item in email %}
+                    {% if item.title == "email" %}
+                    <a href="{{ item.url }}" target="_blank">
+                      <i class="fa-solid fa-envelope fa-lg" style="margin-left: -4px;"></i>
+                    </a>
+                    {% endif %}
+                  {%endfor%}
+            
+                </div>
               </div>
         </div>
     </section>
