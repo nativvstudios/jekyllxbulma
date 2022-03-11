@@ -13,7 +13,7 @@
               <div class="content">
                 <h3>{{ post.title }}</h3>
                 <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
-                <form action="{{ post.url }}">
+                <form action="{{ post.url | relative_url }}">
                   <input class="button is-link modal-button" type="submit" value="Go to Post" />
               </form>
               <h6 class="post-date">{{ post.date | date_to_string }}</h6>
@@ -38,7 +38,7 @@
             <div class="content">
               <h3>{{ post.title }}</h3>
               <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
-              <form action="{{ post.url }}">
+              <form action="{{ post.url | relative_url }}">
                   <input class="button is-link modal-button" type="submit" value="Go to Post" />
               </form>
               <h6 class="post-date">{{ post.date | date_to_string }}</h6>
@@ -62,7 +62,7 @@
             <div class="content">
               <h3>{{ post.title }}</h3>
               <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
-              <form action="{{ post.url }}">
+              <form action="{{ post.url | relative_url }}">
                   <input class="button is-link modal-button" type="submit" value="Go to Post" />
               </form>
               <h6 class="post-date">{{ post.date | date_to_string }}</h6>
@@ -88,7 +88,7 @@
               
               <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis.</p>
               
-              <form action="{{ post.url }}">
+              <form action="{{ post.url | relative_url }}">
                   <input class="button is-link modal-button" type="submit" value="Go to Post" />
               </form>
               <h6 class="post-date">{{ post.date | date_to_string }}</h6>

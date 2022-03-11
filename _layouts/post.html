@@ -2,7 +2,7 @@
 <html>
     {% include head.html %}
   <body>
-    <section class="hero is-dark is-fullheight ">
+    <section class="hero is-dark is-halfheight ">
 
         <div class="hero-head">
             {% include header.html %}
@@ -10,18 +10,14 @@
         </div>
     
     
-        <div class="hero-body ">
+        <div class="hero-body">
             <div class="container has-text-centered is-centered">
-                <figure class="avatar image">
-                    <a href="{{ "/" | relative_url }}">
-                        <img class="is-rounded" src="https://picsum.photos/300" alt="">
-                    </a>
-                </figure>
                 <h1 class="title is-1">
-                  {{ site.title }}
+                  {{ page.title | escape }}
                 </h1>
                 <p class="subtitle">
-                  {{ site.description }}
+                  {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
+                  {{ page.date | date: date_format }}
                 </p>
               </div>
         </div>
